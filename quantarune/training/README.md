@@ -15,8 +15,9 @@ training/
     lerobot_train_patched.py
     scripts/
       build_sc_stage_datasets.sh
-      train_sc_stage_teachers.sh
       train_act_dataset.sh
+    archive/
+      train_sc_stage_teachers.sh
     utils/
       lerobot_video_patch.py
     config/
@@ -30,10 +31,10 @@ training/
 
 ## act/
 
-We trained one ACT head per stage of the SC insertion. The four stages
-are `approach`, `align`, `guarded_insert` and `retry_or_finish`. The
-finite-state machine in `../policies/act-fsm/RunACTStaged.py` switches
-between these heads at run time.
+The finite-state machine in `../policies/act-fsm/RunACTStaged.py` has four
+stages: `approach`, `align`, `guarded_insert` and `retry_or_finish`. In our
+final version, ACT drives only `approach` and `align`. The insertion has no
+learned part.
 
 | File | What it does |
 |---|---|
@@ -42,16 +43,16 @@ between these heads at run time.
 | `lerobot_train_patched.py` | Starts LeRobot training with a faster dataloader, without edits to site-packages |
 | `utils/lerobot_video_patch.py` | Replaces LeRobot video frame decoding with a PyAV decoder |
 | `scripts/build_sc_stage_datasets.sh` | Builds the SC stage manifest, then runs `build_sc_stage_act_datasets.py` |
-| `scripts/train_sc_stage_teachers.sh` | Trains the four stage heads in sequence |
 | `scripts/train_act_dataset.sh` | Trains one ACT policy on one dataset |
+| `archive/train_sc_stage_teachers.sh` | An older experiment that trained one head for each of the four stages. Our final version does not use it |
 | `config/resolved_config.yaml` | The resolved config of the ACT run on `experiment_8` |
 
 The order of one run is:
 
 1. Record SC teleop episodes with `../data-collection/`.
 2. Build the stage manifest and the four stage datasets.
-3. Train the four stage heads.
-4. Load the heads in `RunACTStaged` and evaluate in the Gazebo sim.
+3. Train the ACT policies for `approach` and `align` with `train_act_dataset.sh`.
+4. Load them in `RunACTStaged` and evaluate in the Gazebo sim.
 
 Checkpoints went to the Hugging Face repo `shng2025/aic-act-checkpoints`.
 Each run got its own branch.
