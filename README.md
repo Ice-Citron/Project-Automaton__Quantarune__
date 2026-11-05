@@ -11,6 +11,20 @@ Intrinsic’s AI for Industry Challenge is a competition run by Alphabet’s Int
 
 > We finished 49th out of 196 teams. Our policy scored 141 in our local benchmark and 89 on the competition held-out evals.
 
+## Repository structure
+
+```
+quantarune/
+  data-collection/   recorder, scripted data runs, teleop and replay
+  perception/        classical CV, segmentation model, SAM + DINOv2, MegaPose
+  policies/          the ACT-FSM policy and its variants
+  training/          ACT training pipeline and an unused flow-matching stack
+docs/                W&B report and charts, policy iterations, videos
+submodules/aic/      the organisers' challenge code (intrinsic-dev/aic)
+```
+
+Each folder under `quantarune/` has its own README.
+
 ## Videos
 
 <table>
