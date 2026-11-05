@@ -126,7 +126,7 @@ environment, so expect to adjust them.
    `_RETRY_OR_FINISH`, and the scored bag and its scoring file land in the
    engine's results folder.
 
-## Data and models on Hugging Face
+## Datasets and models on Hugging Face
 
 | Hugging Face repo | Type | Contents |
 |---|---|---|
