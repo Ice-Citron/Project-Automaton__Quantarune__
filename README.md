@@ -164,7 +164,7 @@ MegaPose and InsertionNet, whose work the perception experiments follow.
 
 - Initially, I worked with Natalia Chan and Evan O’Leary in Team Servos.
 - Then, I worked with Evan O’Leary, Ali Muhammad, Justin, Enrique, Tommy and Sanjay in Team Rangers.
-- Ultimately, I worked with Rucha Agashe in Team Quantarune.
+- Ultimately, I worked with Rucha Agashe in Team Quantarune. This repo is the work that we (Shi Hao and Rucha) did and found the most successful out of all approaches. 
 - It is a huge pleasure to work with all of you for which I’ve learned a lot. 
 
 ## Licence
