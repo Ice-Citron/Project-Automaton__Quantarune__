@@ -1,12 +1,9 @@
 # training
 
-This folder holds the training code of Quantarune. It is an archive. The
-datasets, checkpoints and outputs are not in this repository, so nothing
-here runs as is.
-
-There are two lines of work. `act/` is the ACT pipeline behind the
-stage policies in `../policies/act-fsm/`. `flow-matching/` is a separate
-flow-matching policy that we built alongside it.
+This folder holds the training code of Team Quantarune. There are two lines of 
+work. `act/` is the ACT pipeline behind the stage policies in 
+`../policies/act-fsm/`. On the other hand, `flow-matching/` is a 
+flow-matching policy that we also built.
 
 ## Layout
 
@@ -74,10 +71,10 @@ Hydra configs.
 | `eval/` | Automated sim evaluation through `aic_engine` and score parsing |
 | `utils/` | 6D rotation helpers and the Hugging Face publisher |
 
-No other code in this repository imports this folder. Our shipped
-policies use ACT.
+> Note: No other code in this repository imports this folder. Our shipped 
+> policies use ACT.
 
-## Other files
+## Miscellaneous files
 
 - `pyproject.toml` and `pixi.toml` record the environment we trained
   in. They still name the package `quantarune_training`.
