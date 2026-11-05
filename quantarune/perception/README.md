@@ -39,7 +39,7 @@ The recorded result after 14 epochs was a mean IoU of 0.41 on the
 validation set. The plug IoU was 0.43 and the target IoU was 0.38. The
 model found the plug. It was not accurate enough to centre on a port.
 
-<img width="1152" height="768" alt="segmenter_val_overlays" src="https://github.com/user-attachments/assets/62a3e282-d807-4ea7-8b8d-1627808ef96a" />
+<img width="1000" height="768" alt="segmenter_val_overlays" src="https://github.com/user-attachments/assets/62a3e282-d807-4ea7-8b8d-1627808ef96a" />
 
 
 ## cnos/
@@ -55,10 +55,10 @@ SAM usually made a good mask. The best proposal had an IoU of 0.54 to
 0.93 against the pseudo-label. The DINOv2 selection did not pick it
 often. On 12 frames the top pick had a mean IoU of 0.19.
 
-<img width="896" height="1344" alt="sam_proposals_vs_pseudolabel" src="https://github.com/user-attachments/assets/67837c15-803f-47d3-9c2e-9ad71a78c3c4" />
+<img width="1000" height="1000" alt="sam_proposals_vs_pseudolabel" src="https://github.com/user-attachments/assets/67837c15-803f-47d3-9c2e-9ad71a78c3c4" />
 
 
-<img width="1536" height="1152" alt="cnos_style_dinov2_selection" src="https://github.com/user-attachments/assets/c036c15e-8877-44f1-88f4-e2c5fc71bfe7" />
+<img width="1500" height="800" alt="cnos_style_dinov2_selection" src="https://github.com/user-attachments/assets/c036c15e-8877-44f1-88f4-e2c5fc71bfe7" />
 
 
 ## megapose/
