@@ -1,36 +1,91 @@
 
-# Background
+# Quantarune: Project Automaton
+
+> To see a more detailed write-up, visit my website: [sienarindustries.com/project/project-automaton](https://sienarindustries.com/project/project-automaton).
+
 Welcome to our submission for intrinsic's AI for Industry Challenge!! 
 
-Intrinsic's AI for Industry Challenge is a competition run by Alphabet’s Intrinsic with NVIDIA and Foxconn. Teams are asked to create a robot policy that gets a Universal Robots UR5e robotic arm to insert a fiber-optic cable into a server port across two connector types (SC & SFP), inside Gazebo. There was a qualification round and a final round; we didn’t get past qualification, finishing 49th out of 196 teams. The competition scored every submission with Intrinsic’s custom-created evaluation-engine (the AIC engine) inside Gazebo, across three held-out trials. This is a very difficult challenge, because cable insertion is a hard task in robotics: the contact and friction dynamics of cable ports are incredibly difficult to model, and tends to be where policies fail.
+From February 2026 to June 2026, I competed in Intrinsic’s AI for Industry Challenge, finishing it with Rucha Agashe as Team Quantarune. At the time, I wanted to pivot from building with agentic systems and post-training language models to Physical AI, because I believed robotics is the future. This was my first proper robotics project. I was most interested in reinforcement learning and simulations, and hoped that the competition would allow me to apply RL for once. I even bought an RTX 5090 workstation for it.
 
+Intrinsic’s AI for Industry Challenge is a competition run by Alphabet’s Intrinsic with NVIDIA and Foxconn. Teams are asked to create a robot policy that gets a Universal Robots UR5e robotic arm to insert a fiber-optic cable into a server port across two connector types (SC & SFP), inside Gazebo.
 
-## Project write-up and artefacts
+> We finished 49th out of 196 teams. Our policy scored 141 in our local benchmark and 89 on the competition held-out evals.
 
-Our write-up of the project is at
-[sienarindustries.com/project/project-automaton](https://sienarindustries.com/project/project-automaton).
-
-The Weights & Biases training report for the ACT policies (finished runs) is at
-[docs/aic-act-training-wandb-report.pdf](docs/aic-act-training-wandb-report.pdf).
-
-The MP4 files for our finalised videos, showcasing our policy and solution, are in `quantarune/videos/final/with_voice/` and the
-scoring files for every clip are in `quantarune/videos/final/scores/`.
-
-Watch the project on YouTube:
+## Videos
 
 <table>
-<tr><td width="50%" valign="top"><a href="https://www.youtube.com/watch?v=uIU_bVWS30E"><img src="https://img.youtube.com/vi/uIU_bVWS30E/hqdefault.jpg" width="100%"></a><br><sub><a href="https://www.youtube.com/watch?v=uIU_bVWS30E">Our Final Policy, an ACT-FSM doing cable-insertion</a> (<a href="https://www.youtube.com/watch?v=uIU_bVWS30E&t=3s">from 0:03</a>)</sub></td><td width="50%" valign="top"><a href="https://www.youtube.com/watch?v=havYEkYhJIg"><img src="https://img.youtube.com/vi/havYEkYhJIg/hqdefault.jpg" width="100%"></a><br><sub><a href="https://www.youtube.com/watch?v=havYEkYhJIg">Initial versions of our trained ACT model's poor performance in doing cable insertion</a></sub></td></tr>
+  <tr>
+    <td width="50%"><a href="https://www.youtube.com/watch?v=uIU_bVWS30E&t=3s"><img src="https://img.youtube.com/vi/uIU_bVWS30E/maxresdefault.jpg" alt="Our final policy, an ACT-FSM doing cable insertion"></a></td>
+    <td width="50%"><a href="https://www.youtube.com/watch?v=havYEkYhJIg"><img src="https://img.youtube.com/vi/havYEkYhJIg/maxresdefault.jpg" alt="Initial versions of our trained ACT model"></a></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Our Final Policy, an ACT-FSM doing cable-insertion</b><br><a href="https://www.youtube.com/watch?v=uIU_bVWS30E&t=3s">link</a> (from 0:03)</td>
+    <td align="center"><b>Initial versions of our trained ACT model's poor performance in doing cable insertion</b><br><a href="https://www.youtube.com/watch?v=havYEkYhJIg">link</a></td>
+  </tr>
 </table>
 
 <table>
-<tr><td width="50%" valign="top"><a href="https://github.com/Ice-Citron/Project-Automaton__Quantarune__/blob/main/quantarune/videos/final/with_voice/sc_easy_full_insertion_4_v3_retry_sc004_gtoff_20261027_121042_edited_voice.mp4"><img src="https://raw.githubusercontent.com/Ice-Citron/Project-Automaton__Quantarune__/main/quantarune/videos/final/with_voice/previews/sc_easy_full_insertion_4_v3_retry_sc004_gtoff_20261027_121042_edited_voice.gif" width="100%"></a><br><sub>Learned ACT stages plus the scripted finish on SC scene 004, ground truth off. Seats on the second attempt, score 96.86.</sub></td><td width="50%" valign="top"><a href="https://github.com/Ice-Citron/Project-Automaton__Quantarune__/blob/main/quantarune/videos/final/with_voice/sfp_align_guarded_gentle_90point4_20260511_001_002_edited_voice.mp4"><img src="https://raw.githubusercontent.com/Ice-Citron/Project-Automaton__Quantarune__/main/quantarune/videos/final/with_voice/previews/sfp_align_guarded_gentle_90point4_20260511_001_002_edited_voice.gif" width="100%"></a><br><sub>CheatCode teacher on an SFP three-card board, ground truth on. Clean insertion, score 90.41.</sub></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Ice-Citron/Project-Automaton__Quantarune__/blob/main/quantarune/videos/final/with_voice/sfp_terminal_gentle_collect_90point3_20260512_001_023_edited_voice.mp4"><img src="https://raw.githubusercontent.com/Ice-Citron/Project-Automaton__Quantarune__/main/quantarune/videos/final/with_voice/previews/sfp_terminal_gentle_collect_90point3_20260512_001_023_edited_voice.gif" width="100%"></a><br><sub>CheatCode teacher on an SFP five-card board, ground truth on. Clean insertion, score 90.59.</sub></td><td width="50%" valign="top"><a href="https://github.com/Ice-Citron/Project-Automaton__Quantarune__/blob/main/quantarune/videos/final/with_voice/sc_guarded_heavy_autorescue_82point3_20260510_003_015_edited_voice.mp4"><img src="https://raw.githubusercontent.com/Ice-Citron/Project-Automaton__Quantarune__/main/quantarune/videos/final/with_voice/previews/sc_guarded_heavy_autorescue_82point3_20260510_003_015_edited_voice.gif" width="100%"></a><br><sub>CheatCode auto-rescue on an SC three-card board with a deliberately wrong target. Three rescues, score 82.35.</sub></td></tr>
-<tr><td width="50%" valign="top"><a href="https://github.com/Ice-Citron/Project-Automaton__Quantarune__/blob/main/quantarune/videos/final/with_voice/sc_retry_reseat_autorescue_84point8_20260509_001_010_edited_voice.mp4"><img src="https://raw.githubusercontent.com/Ice-Citron/Project-Automaton__Quantarune__/main/quantarune/videos/final/with_voice/previews/sc_retry_reseat_autorescue_84point8_20260509_001_010_edited_voice.gif" width="100%"></a><br><sub>CheatCode auto-rescue on an SC one-card board with a larger wrong target. Two rescues, score 84.84.</sub></td></tr>
+  <tr>
+    <td width="50%"><a href="docs/videos/%5Bsc%20easy%20full%20insertion%204%5D%20RunACTStaged%20%2B%20scripted%20insert%20v3%20retry%20%5BSC%20004%2C%20gt-off%5D%2020261027_121042_edited_voice.mp4"><img src="docs/videos/previews/sc_easy_full_insertion_4_v3_retry_sc004_gtoff_20261027_121042_edited_voice.jpg" alt="Learned ACT stages plus the scripted finish on SC scene 004, ground truth off"></a></td>
+    <td width="50%"><a href="docs/videos/sfp_align_guarded_gentle_90point4_20260511_001_002_edited_voice.mp4"><img src="docs/videos/previews/sfp_align_guarded_gentle_90point4_20260511_001_002_edited_voice.jpg" alt="CheatCode teacher on an SFP three-card board, ground truth on"></a></td>
+  </tr>
+  <tr>
+    <td align="center">Learned ACT stages plus the scripted finish on SC scene 004, ground truth off. Seats on the second attempt, score 96.86.<br><a href="docs/videos/%5Bsc%20easy%20full%20insertion%204%5D%20RunACTStaged%20%2B%20scripted%20insert%20v3%20retry%20%5BSC%20004%2C%20gt-off%5D%2020261027_121042_edited_voice.mp4">link</a></td>
+    <td align="center">CheatCode teacher on an SFP three-card board, ground truth on. Clean insertion, score 90.41.<br><a href="docs/videos/sfp_align_guarded_gentle_90point4_20260511_001_002_edited_voice.mp4">link</a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="docs/videos/sfp_terminal_gentle_collect_90point3_20260512_001_023_edited_voice.mp4"><img src="docs/videos/previews/sfp_terminal_gentle_collect_90point3_20260512_001_023_edited_voice.jpg" alt="CheatCode teacher on an SFP five-card board, ground truth on"></a></td>
+    <td width="50%"><a href="docs/videos/sc_guarded_heavy_autorescue_82point3_20260510_003_015_edited_voice.mp4"><img src="docs/videos/previews/sc_guarded_heavy_autorescue_82point3_20260510_003_015_edited_voice.jpg" alt="CheatCode auto-rescue on an SC three-card board with a deliberately wrong target"></a></td>
+  </tr>
+  <tr>
+    <td align="center">CheatCode teacher on an SFP five-card board, ground truth on. Clean insertion, score 90.59.<br><a href="docs/videos/sfp_terminal_gentle_collect_90point3_20260512_001_023_edited_voice.mp4">link</a></td>
+    <td align="center">CheatCode auto-rescue on an SC three-card board with a deliberately wrong target. Three rescues, score 82.35.<br><a href="docs/videos/sc_guarded_heavy_autorescue_82point3_20260510_003_015_edited_voice.mp4">link</a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="docs/videos/sc_retry_reseat_autorescue_84point8_20260509_001_010_edited_voice.mp4"><img src="docs/videos/previews/sc_retry_reseat_autorescue_84point8_20260509_001_010_edited_voice.jpg" alt="CheatCode auto-rescue on an SC one-card board with a larger wrong target"></a></td>
+  </tr>
+  <tr>
+    <td align="center">CheatCode auto-rescue on an SC one-card board with a larger wrong target. Two rescues, score 84.84.<br><a href="docs/videos/sc_retry_reseat_autorescue_84point8_20260509_001_010_edited_voice.mp4">link</a></td>
+  </tr>
 </table>
 
-## Understanding our results 
+## Approach
 
-NOTE: it is very difficult and infeasible to include every obtained result in this table, so we decided to include results which showcase the most variety across scenarios and scores too.
+> For more details of our various iterations before we settled on our final submission, see [policy-iterations.md](docs/policy-iterations.md).
+> For a seamless end-to-end story, I insist you read the writeup in my website:
+> [sienarindustries.com/project/project-automaton](https://sienarindustries.com/project/project-automaton).
+
+We replaced the single end-to-end ACT policy with a four-state machine ([`RunACTStaged.py`](quantarune/policies/act-fsm/RunACTStaged.py)), so each constrained state could use whatever worked:
+
+- **APPROACH**: ACT drives the TCP from the dock towards the port. Advances to the next state once the model’s target has settled to within 25 mm.
+- **ALIGN**: still ACT, but damped. Instead of naively moving the TCP straight to each new target the ACT model produces, the arm moves only a quarter of the way towards it per step, so a noisy prediction can’t throw the tip off. The stage ends when lateral XY-error is \<15mm and angular error \<0.12 rad, and both errors hold for \>0.75 seconds. At this point, the policy reads the direction the ACT model has been pushing in and locks it as the insert axis. 
+- **GUARDED_INSERT**: ACT is switched off. The arm steps along the fixed axis about 5mm per quarter-second, decelerating if the force-torque sensor climbs from 12N to 19N. A supervisor also clamps every step (\<1mm of lateral drift, and \<0.01 radian of rotation) and aborts on four triggers:
+  - Force-torque sensor >18N
+  - 1.5 seconds with no progress (indicating TCP getting stuck on port)
+  - 6 stalled GUARDED_INSERT attempts
+  - Lateral oscillations
+- **RETRY_OR_FINISH**: if TCP was aborted during GUARDED_INSERT, we return to ALIGN to try once more, else task success.
+
+The ACT models behind APPROACH and ALIGN were trained on our custom-curated recorded trajectories. We made CheatCode (the scripted reference policy from Intrinsic) run under perturbations, and used our teleoperated insertions, so the model had seen clean approaches, near-misses and recoveries rather than only best case scenarios. The insertion portion of our policy (GUARDED_INSERT) had no learned components, it relies only on analytically controlled force-scaled stepping. This consequently was our only policy which reliably made contact without slamming into the ports.
+
+Our best ground-truth-off scores in the table below come from a variant, [`RunACTStagedScriptedInsert`](quantarune/policies/scripted-insert/), which keeps APPROACH and ALIGN and replaces GUARDED_INSERT with a scripted wiggle-and-retry insertion.
+
+
+## Results 
+
+### Weights & Biases: training loss curves
+
+> The Weights & Biases training report for the ACT policies (finished runs) is at
+> [docs/aic-act-training-wandb-report.pdf](docs/aic-act-training-wandb-report.pdf).
+> The charts below are our logged training results from Weights & Biases:
+
+<p align="center"><img src="docs/wandb/wandb-loss-l1.png" width="900" alt="train/loss and train/l1_loss of all finished ACT runs"></p>
+<p align="center"><img src="docs/wandb/wandb-kld-gradnorm.png" width="900" alt="train/kld_loss and train/grad_norm of all finished ACT runs"></p>
+<p align="center"><img src="docs/wandb/wandb-sfp-student-497.png" width="900" alt="All training curves of the longest run, sfp_student_clean_497_48ep"></p>
+
+### Our results on Intrinsic's AIC Evaluation Engine
+
+> NOTE: it is very difficult and infeasible to include every obtained result in this table, so we decided to include results which showcase the most variety across scenarios and scores too.
 
 | Scenario | Method | Max score | Notes |
 |---|---|---|---|
@@ -44,92 +99,7 @@ NOTE: it is very difficult and infeasible to include every obtained result in th
 | SC carded boards, ground truth on | ACT FSM | 82.35 and 84.84 | reference runs showing back-out and re-centre |
 | SFP scene 137, ground truth off, after the challenge | taught templates + image servo + scripted insert | 87.21, 87.20, 87.15 | three of three inserted, see MegaPose below |
 
-In the qualification round our submission finished 49th of 196 teams. The
-scored bags behind every row are in `quantarune/act-fsm/runs/` and on
-Hugging Face under `quantarune-act-fsm-scored-trials`.
-
-## Approach
-
-### Four learned stages and a state machine
-
-`RunACTStaged.py` wraps four ACT policies in a small state machine with the
-states APPROACH, ALIGN, GUARDED_INSERT and RETRY_OR_FINISH. Each state has
-its own head trained on the slice of the demonstrations that belongs to
-that phase, and the wrapper decides which head runs and when to switch. 
-
-The heads see the three wrist cameras at 256 by 288, the 48-value robot state
-and nothing else, and each predicts a chunk of 100 actions of 19 values.
-APPROACH flies the plug from the start pose to a hover point above the
-target, ALIGN squares the tip up over the socket and waits until the
-predicted pose stops moving, and GUARDED_INSERT pushes down while the
-wrapper watches the force sensor and the descent. If the plug has not
-descended enough within the guarded-insert window the wrapper backs out
-about 10 mm, settles, and hands control back to ALIGN for another attempt.
-After the retry budget is spent it hands over to the scripted finish. 
-
-Every transition is a rule in the wrapper rather than a prediction, which makes a
-run inspectable after the fact and gives the retry a fixed place to live.
-The heads were trained for 10,000 steps at batch size 8 with the LeRobot
-ACT trainer and the video patch in `isaac-training/`; the exact collect,
-dataset and train scripts are in `act-fsm/pipeline/`.
-
-### Scripted finish
-
-The learned guarded insert reliably brings the plug onto the port axis but
-stalls about 13 mm above the seat, so `RunACTStagedScriptedInsert.py` takes
-over at that point. 
-
-It descends straight down in the base frame at a slow
-fixed rate, adds a small circular wiggle whose radius only grows while
-depth progress stalls, and reads no port pose at any time. A rolling stall
-test triggers a retry: back off, settle, and descend again, and from v4 each
-retry re-descends from a hand-off position shifted by a small offset in a
-new direction, since retries at the same spot met the same lip. v5 widens
-those offsets by one step per cycle. 
-
-The finish is compliant across the insertion axis and firm along it, and the force cap of the controller ends
-the attempt before the 20 N penalty (better than getting the penalty and risking the score for it). We have included some versions behind the clips in
-`scripted-insert/snapshots/` and the
-logs showed the outcome was mostly fixed at hand-off, which is why the scripted insert worked so well. 
-
-### Teacher and demonstrations
-
-Every demonstration within the dataset was recorded by CheatCode, a scripted teacher that
-reads the true port pose from the simulator and inserts the cable itself.
-To keep the demonstrations realistic it adds a small deliberate error to
-the target, typically one to three millimetres and a degree or two of
-yaw, which fades to zero over the last 10 mm of the descent. It has three
-modes: full, where it does the whole insertion; handoff, where it stops
-above the port; and auto_rescue, where it descends on a deliberately wrong
-target, misses, backs out, re-centres on the true pose and tries again,
-up to three times. The SC training set is `sc_scripted_full_003` (100
-generated cases, of which the 29 clean episodes in the stage frame ranges
-were used) plus the 8 recovery episodes of `sc_recovery_scripted_20260504_001`,
-and the SFP set is the 40 sessions of `sfp137_cc_20261031`. Scenes were
-drawn from generated configs with a qualification-like mix of network
-cards, listed under `demonstrations/scene-configs/`. Each episode was cut
-into the four stages by a reference-pose heuristic with a minimum segment
-of 8 frames, giving the stage datasets on Hugging Face (SC: 37 episodes
-per stage, SFP: 40 per stage).
-
-
-## What worked and what did not
-
-On the training board the full pipeline seats the plug in about seven of
-ten runs with scores near 98, and the retry state does what it was built
-for: when guarded insert makes no progress the wrapper backs out, re-aligns
-and tries again. 
-
-On boards with network cards the same weights reach the
-right area but miss the socket by one to three centimetres, because the
-learned stages carry no fine port localisation - this is the gap we identified, but due to time constraints of the competition, we couldn't cater for fine port localisation. 
-
-From the replay you can see it seated the plug on the
-four-card board but only for that scene. 
-
-We ran perception experiments
-(segmentation, SAM, CNOS-style selection, MegaPose) to find the port in
-the image but unfortunately none of them reached the millimetre accuracy that was needed. What would help is a port locator which is accurate to a millimetre feeding the ALIGN stage.
+In the qualification round our final submission finished 49th of 196 teams.
 
 ## How to run
 
@@ -167,17 +137,21 @@ environment, so expect to adjust them.
 | [quantarune-act-fsm-scored-trials](https://huggingface.co/datasets/shng2025/quantarune-act-fsm-scored-trials) | dataset | scored trial bags with their scoring files |
 | [quantarune-act-fsm-sc-scripted-insert](https://huggingface.co/shng2025/quantarune-act-fsm-sc-scripted-insert) | model | scripted insert model |
 
-You may notice that files over 50 MB are not in this git repository and you would be correct. Each affected folder has a
-`LARGE_FILES_NOT_IN_GIT.md` that lists them and says where they are located (all on Hugging Face).
-
-
 ## Acknowledgements
 
 The scoring engine, running and simulation of the AI for Industry Challenge is done by Intrinsic, NVIDIA and Foxconn, as well as all related assets (thanks!). 
 Action Chunking Transformer usage came from the original authors of
 ACT (Zhao et al., 2023) 
+
 Also to thank are the authors of Segment Anything, DINOv2, CNOS,
 MegaPose and InsertionNet, whose work the perception experiments follow.
+
+## Credits
+
+- Initially, I worked with Natalia Chan and Evan O’Leary in Team Servos.
+- Then, I worked with Evan O’Leary, Ali Muhammad, Justin, Enrique, Tommy and Sanjay in Team Rangers.
+- Ultimately, I worked with Rucha Agashe in Team Quantarune.
+- It is a huge pleasure to work with all of you for which I’ve learned a lot. 
 
 ## Licence
 

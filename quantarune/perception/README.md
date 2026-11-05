@@ -1,9 +1,8 @@
 # perception
 
 This folder holds our work on finding the plug and the target port in
-the camera images. We tried four methods. Most of this work did not go
-into our final policy. We keep it here as a record. This folder is an
-archive, so the code does not run as is.
+the camera images. We experimented four methods. Most of this work did not go
+into our final policy, we keep it here as a record.
 
 ## Layout
 
@@ -56,8 +55,7 @@ often. On 12 frames the top pick had a mean IoU of 0.19.
 ## megapose/
 
 MegaPose estimates the 6D pose of an object from one RGB image and a
-mesh. The weights were not available, so every call went through a
-public Hugging Face Space on CPU.
+mesh. 
 
 | Path | What it holds |
 |---|---|
@@ -67,14 +65,5 @@ public Hugging Face Space on CPU.
 | `utils/evaluation/` | Comparison with ground truth and the trial summary |
 | `output/run-1` to `run-5` | Results of the two smoke tests, the two offline runs and the in-the-loop trials |
 
-Offline on SFP scene 137, MegaPose found the port to about 1 cm in the
-image plane. The depth error was tens of millimetres. In the loop, the
-policy logged the MegaPose estimate but did not use it to move the arm.
-See `../policies/megapose-scripted-insert/` for that policy.
-
-## Notes
-
-- Some scripts still import `quantarune_training.vision`. That code is
-  now in `segmentation-model/model/`.
-- The datasets, the checkpoints and the raw frames are not in this
-  repository.
+On scene `SFP scene 137`, MegaPose found the port to about 1 cm in the
+image plane. The depth error was tens of millimetres.

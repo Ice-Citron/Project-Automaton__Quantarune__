@@ -2,8 +2,7 @@
 
 This folder holds the policies that we ran in the AIC simulator. A
 policy reads the robot state and the cameras. It then sends motion
-commands to the arm. This folder is an archive, so the code does not
-run as is.
+commands to the arm. 
 
 ## Layout
 
@@ -17,9 +16,6 @@ policies/
 
 ## How the policies relate
 
-All ACT policies extend `RunACTStaged`. The MegaPose policy extends the
-organiser's `CheatCode` policy instead.
-
 | Policy | Extends |
 |---|---|
 | `RunACTStaged` | `RunACTCompetitor` (not in this repository) |
@@ -28,8 +24,8 @@ organiser's `CheatCode` policy instead.
 | `RunACTVision` | organiser `RunACT` |
 | `RunMegaPoseScriptedInsert` | organiser `CheatCode` |
 
-In the original repository all these files were in one ROS package.
-They import each other with relative imports.
+All ACT policies extend `RunACTStaged`. In the original repository all these 
+files were in one ROS package. They import each other with relative imports.
 
 ## act-fsm/
 
@@ -61,22 +57,3 @@ The vision features come from `../perception/classical/`.
 SFP cage with template matching. It calls MegaPose once to check the
 port pose. It then aligns the plug from the image and runs the scripted
 insertion.
-
-| Path | What it holds |
-|---|---|
-| `utils/template_port_detector.py` | The template-matching detector for the SFP cage |
-| `config/templates_sfp137/` | The four cage templates from scene 137 |
-| `config/calib_sfp_mount_to_port.json` | The calibration from the cage mesh to the port |
-| `config/tip_in_tcp.json` | The plug tip pose in the gripper |
-
-Three evidence trials with ground truth off inserted the cable on scene
-137. They scored 87.21, 87.20 and 87.15. Template matching and the image
-alignment drove the insertion. MegaPose was not accurate enough to move
-the arm. `../perception/megapose/` records these trials.
-
-## Notes
-
-- `RunACTCompetitor.py`, `CheatCode.py` and `RunACT.py` are not in this
-  folder. The organiser versions are in `../../submodules/aic`.
-- `vision_target_features.py` is in `../perception/classical/`.
-- The ACT checkpoints are not in this repository.

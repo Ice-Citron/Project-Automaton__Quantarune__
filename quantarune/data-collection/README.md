@@ -1,8 +1,7 @@
 # data-collection
 
 This folder holds the code that made our training data. All data comes
-from the AIC simulator. The recorded datasets are not in this
-repository. This folder is an archive, so the code does not run as is.
+from the AIC simulator.
 
 ## Layout
 
@@ -14,7 +13,7 @@ data-collection/
   replay/        policies that replay recorded trajectories
 ```
 
-## How the parts fit
+## How each module works with one another
 
 1. A run starts in Gazebo. A scripted policy, a teleoperator or a
    replay policy moves the arm.
@@ -24,8 +23,6 @@ data-collection/
 5. `../training/act/` builds the stage datasets from these episodes.
 
 ## recorder/
-
-This is the ROS 2 package `aic_ros_recorder`.
 
 | File | What it does |
 |---|---|
@@ -38,7 +35,7 @@ This is the ROS 2 package `aic_ros_recorder`.
 
 ## gazebo-data/
 
-These scripts collect data with the CheatCode policy. CheatCode reads
+These scripts collect trajectories with the CheatCode policy. CheatCode reads
 the ground-truth port pose, so it gives clean demonstrations.
 
 | File | What it does |
@@ -72,9 +69,3 @@ to make more demonstrations and to test the final insertion steps.
 | `ReplaySCVisualServoScriptedInsert.py` | Visual servo replay, then the scripted insert (v5) |
 | `Run*.py` | Entry points that start the replay policies above |
 | `replay_templates/` | The recorded trajectories that the replays read |
-
-## Notes
-
-- The scripts still use old paths such as `quantarune_data/`. These
-  paths do not exist in this layout.
-- The organiser code that these scripts call is in `../../submodules/aic`.
