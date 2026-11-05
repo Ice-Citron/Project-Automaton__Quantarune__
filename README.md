@@ -1,13 +1,13 @@
 
 # Quantarune: Project Automaton
 
-> To see a more detailed write-up, visit my website: [sienarindustries.com/project/project-automaton](https://sienarindustries.com/project/project-automaton).
-
 Welcome to our submission for intrinsic's AI for Industry Challenge!! 
 
 From February 2026 to June 2026, I competed in Intrinsic’s AI for Industry Challenge, finishing it with Rucha Agashe as Team Quantarune. At the time, I wanted to pivot from building with agentic systems and post-training language models to Physical AI, because I believed robotics is the future. This was my first proper robotics project. I was most interested in reinforcement learning and simulations, and hoped that the competition would allow me to apply RL for once. I even bought an RTX 5090 workstation for it.
 
 Intrinsic’s AI for Industry Challenge is a competition run by Alphabet’s Intrinsic with NVIDIA and Foxconn. Teams are asked to create a robot policy that gets a Universal Robots UR5e robotic arm to insert a fiber-optic cable into a server port across two connector types (SC & SFP), inside Gazebo.
+
+> To see a more detailed write-up, visit my website: [sienarindustries.com/project/project-automaton](https://sienarindustries.com/project/project-automaton).
 
 > We finished 49th out of 196 teams. Our policy scored 141 in our local benchmark and 89 on the competition held-out evals.
 
