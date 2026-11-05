@@ -1,0 +1,33 @@
+defaults:
+  - model: flow_matching
+  - data: default
+  - training: default
+  - eval: sim
+  - _self_
+
+seed: 42
+device: cuda
+output_dir: outputs/${now:%Y-%m-%d_%H-%M-%S}
+wandb:
+  enable: true
+  project: aic-flow-policy
+  entity: null
+  name: null
+  group: null
+  job_type: train
+  notes: null
+  tags: []
+  mode: online
+  save_code: false
+  log_checkpoints: true
+
+huggingface:
+  enable: false
+  repo_id: shng2025/aic-flow-policy
+  repo_type: model
+  private: false
+  branch: null
+  branch_prefix: run
+  upload_main: true
+  upload_checkpoints: true
+

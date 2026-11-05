@@ -1,0 +1,18 @@
+data:
+  dataset_local_path: experiment_8
+device: cuda
+eval:
+  enable: false
+huggingface:
+  enable: true
+  repo_id: shng2025/aic-act-checkpoints
+  repo_type: model
+  private: false
+  branch: null
+  branch_prefix: experiment-8-act
+  upload_main: true
+  upload_checkpoints: true
+  run_title: AIC ACT Training Run
+  run_summary: This published run stores ACT checkpoints trained on the `experiment_8`
+    dataset. Each completed run is uploaded to its own branch, and the latest completed
+    run can also be synced to the repository main branch.

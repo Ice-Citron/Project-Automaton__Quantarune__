@@ -1,0 +1,14 @@
+max_steps: 100000
+batch_size: 64
+lr: 1e-4
+weight_decay: 1e-5
+warmup_steps: 1000
+lr_schedule: cosine
+gradient_clip: 1.0
+mixed_precision: true
+ema_decay: 0.999
+stiffness_loss_weight: 0.1
+eval_every: 5000
+save_every: 10000
+log_every: 100
+num_workers: 4

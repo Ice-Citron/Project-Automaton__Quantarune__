@@ -1,0 +1,17 @@
+[
+ {
+  "frame": "images/ep_000001/frame_000000.png",
+  "proposals": 39,
+  "best_iou": 0.544
+ },
+ {
+  "frame": "images/ep_000265/frame_000280.png",
+  "proposals": 44,
+  "best_iou": 0.921
+ },
+ {
+  "frame": "images/ep_000496/frame_000420.png",
+  "proposals": 54,
+  "best_iou": 0.928
+ }
+]

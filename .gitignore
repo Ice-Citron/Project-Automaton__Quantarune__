@@ -1,0 +1,17 @@
+# MacOS Security Files
+.DS_Store
+
+# Weights & Biases Logging
+/wandb/
+
+# PyTorch Weight Files
+*.pt
+*.safetensors
+
+# Training Logs & Trajectories
+*.mcap
+*.mp4
+*.parquet
+**/runs/
+**/stage-datasets/
+**/sample-data/

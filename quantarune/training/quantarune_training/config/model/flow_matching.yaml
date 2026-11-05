@@ -1,0 +1,24 @@
+name: flow_matching
+image_encoder:
+  backbone: resnet18
+  pretrained: true
+  freeze_until_block: 2
+  feature_dim: 512
+state_encoder:
+  input_dim: 48
+  hidden_dims: [256, 256]
+  output_dim: 512
+denoiser:
+  hidden_dim: 512
+  num_blocks: 6
+  num_heads: 8
+  dropout: 0.1
+action:
+  horizon: 16
+  mode: velocity  # "velocity" (6D) or "position" (9D with 6D rot)
+  predict_stiffness: false
+  stiffness_dim: 6
+inference:
+  num_ode_steps: 10
+  temporal_ensemble: true
+  ensemble_decay: 0.5

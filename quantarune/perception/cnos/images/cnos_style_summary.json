@@ -1,0 +1,105 @@
+{
+ "templates": 24,
+ "test_frames": 12,
+ "top1_hits_iou_ge_0.5": 2,
+ "mean_top1_iou": 0.189,
+ "mean_oracle_iou": 0.496,
+ "per_frame": [
+  {
+   "frame": "images/ep_000001/frame_000000.png",
+   "proposals": 22,
+   "top1_sim": 0.847,
+   "top1_iou": 0.544,
+   "oracle_iou": 0.544,
+   "oracle_rank": 1
+  },
+  {
+   "frame": "images/ep_000028/frame_000360.png",
+   "proposals": 21,
+   "top1_sim": 0.824,
+   "top1_iou": 0.0,
+   "oracle_iou": 0.267,
+   "oracle_rank": 4
+  },
+  {
+   "frame": "images/ep_000110/frame_000300.png",
+   "proposals": 32,
+   "top1_sim": 0.855,
+   "top1_iou": 0.0,
+   "oracle_iou": 0.028,
+   "oracle_rank": 8
+  },
+  {
+   "frame": "images/ep_000166/frame_000240.png",
+   "proposals": 29,
+   "top1_sim": 0.851,
+   "top1_iou": 0.44,
+   "oracle_iou": 0.44,
+   "oracle_rank": 1
+  },
+  {
+   "frame": "images/ep_000211/frame_000200.png",
+   "proposals": 21,
+   "top1_sim": 0.845,
+   "top1_iou": 0.0,
+   "oracle_iou": 0.924,
+   "oracle_rank": 2
+  },
+  {
+   "frame": "images/ep_000260/frame_000080.png",
+   "proposals": 14,
+   "top1_sim": 0.87,
+   "top1_iou": 0.0,
+   "oracle_iou": 0.0,
+   "oracle_rank": 1
+  },
+  {
+   "frame": "images/ep_000279/frame_000040.png",
+   "proposals": 15,
+   "top1_sim": 0.775,
+   "top1_iou": 0.352,
+   "oracle_iou": 0.352,
+   "oracle_rank": 1
+  },
+  {
+   "frame": "images/ep_000319/frame_000320.png",
+   "proposals": 30,
+   "top1_sim": 0.838,
+   "top1_iou": 0.0,
+   "oracle_iou": 0.944,
+   "oracle_rank": 10
+  },
+  {
+   "frame": "images/ep_000346/frame_000240.png",
+   "proposals": 29,
+   "top1_sim": 0.836,
+   "top1_iou": 0.0,
+   "oracle_iou": 0.718,
+   "oracle_rank": 3
+  },
+  {
+   "frame": "images/ep_000413/frame_000220.png",
+   "proposals": 22,
+   "top1_sim": 0.844,
+   "top1_iou": 0.0,
+   "oracle_iou": 0.0,
+   "oracle_rank": 1
+  },
+  {
+   "frame": "images/ep_000464/frame_000060.png",
+   "proposals": 18,
+   "top1_sim": 0.863,
+   "top1_iou": 0.0,
+   "oracle_iou": 0.802,
+   "oracle_rank": 9
+  },
+  {
+   "frame": "images/ep_000496/frame_000420.png",
+   "proposals": 26,
+   "top1_sim": 0.842,
+   "top1_iou": 0.928,
+   "oracle_iou": 0.928,
+   "oracle_rank": 1
+  }
+ ]
+}

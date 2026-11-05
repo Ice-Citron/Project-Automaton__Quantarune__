@@ -1,0 +1,7 @@
+dataset_repo_id: null           # HuggingFace repo or local path
+dataset_local_path: null
+chunk_horizon: 16
+action_mode: velocity           # "velocity" or "position"
+image_scale: 0.25
+image_augmentation: true
+train_val_split: 0.9

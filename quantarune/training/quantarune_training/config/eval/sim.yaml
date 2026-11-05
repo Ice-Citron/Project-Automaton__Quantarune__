@@ -1,0 +1,15 @@
+enable: false
+num_trials: 3
+engine_config: ${oc.env:AIC_ENGINE_CONFIG,sample_config.yaml}
+timeout_per_trial: 200
+policy_module: aic_flow_policy.RunFlowPolicy
+results_dir: ${output_dir}/eval_results
+metrics:
+  - tier1_score
+  - tier2_smoothness
+  - tier2_duration
+  - tier2_efficiency
+  - tier2_force_penalty
+  - tier2_contact_penalty
+  - tier3_insertion
+  - total_score

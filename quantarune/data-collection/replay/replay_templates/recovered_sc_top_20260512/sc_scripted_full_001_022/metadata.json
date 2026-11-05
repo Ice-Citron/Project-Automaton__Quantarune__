@@ -1,0 +1,36 @@
+{
+  "name": "sc_scripted_full_001_022",
+  "source_parquet_root": "aic-quantarune-isaac-training/quantarune_data/outputs/fixed_scene_batches/sc_scripted_full_001/gazebo_data/sc_scripted_full_001_022/parquet_root/experiment_1",
+  "parquet_files": [
+    "/mnt/sienarune/Black-Projects/Project-Automaton/aic-quantarune-isaac-training/quantarune_data/outputs/fixed_scene_batches/sc_scripted_full_001/gazebo_data/sc_scripted_full_001_022/parquet_root/experiment_1/data/chunk-000/file-000.parquet"
+  ],
+  "source_scoring": "aic-quantarune-isaac-training/quantarune_data/outputs/fixed_scene_runs/sc_scripted_full_001_022/scoring.yaml",
+  "score_total": 90.57482071793348,
+  "output_actions_jsonl": "/mnt/sienarune/Black-Projects/Project-Automaton/aic-quantarune/aic_example_policies/aic_example_policies/ros/replay_templates/recovered_sc_top_20260512/sc_scripted_full_001_022/observations/actions.jsonl",
+  "rows_read": 477,
+  "rows_written": 463,
+  "zero_pose_rows": 14,
+  "skip_zero_pose": true,
+  "canonicalize_quaternion": true,
+  "action_order": [
+    "cartesian.linear.x",
+    "cartesian.linear.y",
+    "cartesian.linear.z",
+    "cartesian.angular.x",
+    "cartesian.angular.y",
+    "cartesian.angular.z",
+    "cartesian.pose.position.x",
+    "cartesian.pose.position.y",
+    "cartesian.pose.position.z",
+    "cartesian.pose.orientation.x",
+    "cartesian.pose.orientation.y",
+    "cartesian.pose.orientation.z",
+    "cartesian.pose.orientation.w",
+    "joint.shoulder_pan_joint",
+    "joint.shoulder_lift_joint",
+    "joint.elbow_joint",
+    "joint.wrist_1_joint",
+    "joint.wrist_2_joint",
+    "joint.wrist_3_joint"
+  ]
+}

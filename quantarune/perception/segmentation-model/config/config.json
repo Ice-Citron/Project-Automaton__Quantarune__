@@ -1,0 +1,32 @@
+{
+  "base_channels": 32,
+  "batch_size": 16,
+  "data_root": "/home/starforge-sf95/Black-Projects/Project-Automaton/aic-quantarune-isaac-training/quantarune_training/outputs/segmentation_annotation_pack_sfp_20260506",
+  "device": "cuda",
+  "epochs": 12,
+  "image_size": [
+    224,
+    224
+  ],
+  "label_names": [
+    "target_port",
+    "plug"
+  ],
+  "learning_rate": 0.0003,
+  "num_workers": 4,
+  "output_dir": "/home/starforge-sf95/Black-Projects/Project-Automaton/aic-quantarune-isaac-training/quantarune_training/outputs/port_segmenter_sfp_pseudolabel_resume12_gpu_20260507",
+  "reset_optimizer": false,
+  "resume_from": "/home/starforge-sf95/Black-Projects/Project-Automaton/aic-quantarune-isaac-training/quantarune_training/outputs/port_segmenter_sfp_pseudolabel_smoke_fix1_20260506/best.pt",
+  "task_condition_names": [
+    "task.cable_type_id",
+    "task.plug_type_id",
+    "task.port_type_id",
+    "task.target_module_id",
+    "task.target_port_id",
+    "task.target_module_index",
+    "task.target_port_index"
+  ],
+  "train_manifest": "/home/starforge-sf95/Black-Projects/Project-Automaton/aic-quantarune-isaac-training/quantarune_training/outputs/segmentation_manifests_sfp_pseudolabel_20260506/train.jsonl",
+  "val_manifest": "/home/starforge-sf95/Black-Projects/Project-Automaton/aic-quantarune-isaac-training/quantarune_training/outputs/segmentation_manifests_sfp_pseudolabel_20260506/val.jsonl",
+  "weight_decay": 0.0001
+}
