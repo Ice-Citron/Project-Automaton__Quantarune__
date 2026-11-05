@@ -1,0 +1,517 @@
+{
+ "frames": [
+  {
+   "file": "f000000.png",
+   "image": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/live001/f000000.png",
+   "bbox": [
+    436,
+    410,
+    578,
+    601
+   ],
+   "port_px": [
+    507.7,
+    505.4
+   ],
+   "depth_m": 0.4048,
+   "T_cam_port": [
+    [
+     0.994235,
+     -0.107211,
+     -0.001317,
+     -0.022352
+    ],
+    [
+     0.103576,
+     0.963555,
+     -0.246646,
+     -0.002174
+    ],
+    [
+     0.027712,
+     0.245088,
+     0.969105,
+     0.404785
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "stamp_ns": 8854000000
+  },
+  {
+   "file": "f000030.png",
+   "image": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/live001/f000030.png",
+   "bbox": [
+    449,
+    368,
+    589,
+    566
+   ],
+   "port_px": [
+    519.1,
+    467.8
+   ],
+   "depth_m": 0.3756,
+   "T_cam_port": [
+    [
+     0.999234,
+     -0.038313,
+     0.007953,
+     -0.017289
+    ],
+    [
+     0.038337,
+     0.917856,
+     -0.395058,
+     -0.013432
+    ],
+    [
+     0.007836,
+     0.395061,
+     0.918621,
+     0.375618
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "stamp_ns": 11468000000
+  },
+  {
+   "file": "f000060.png",
+   "image": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/live001/f000060.png",
+   "bbox": [
+    489,
+    337,
+    649,
+    552
+   ],
+   "port_px": [
+    572.4,
+    447.1
+   ],
+   "depth_m": 0.3364,
+   "T_cam_port": [
+    [
+     0.998742,
+     0.050143,
+     0.000557,
+     -0.000974
+    ],
+    [
+     -0.04082,
+     0.819394,
+     -0.571775,
+     -0.017662
+    ],
+    [
+     -0.029128,
+     0.571033,
+     0.82041,
+     0.336389
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "stamp_ns": 13742000000
+  },
+  {
+   "file": "f000090.png",
+   "image": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/live001/f000090.png",
+   "bbox": [
+    490,
+    337,
+    653,
+    555
+   ],
+   "port_px": [
+    575.3,
+    449.0
+   ],
+   "depth_m": 0.3324,
+   "T_cam_port": [
+    [
+     0.998452,
+     0.055614,
+     0.000124,
+     -0.000198
+    ],
+    [
+     -0.045204,
+     0.81286,
+     -0.580702,
+     -0.016924
+    ],
+    [
+     -0.032396,
+     0.579798,
+     0.814116,
+     0.332352
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "stamp_ns": 16076000000
+  },
+  {
+   "file": "f000120.png",
+   "image": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/live001/f000120.png",
+   "bbox": [
+    487,
+    382,
+    658,
+    609
+   ],
+   "port_px": [
+    576.6,
+    498.6
+   ],
+   "depth_m": 0.314,
+   "T_cam_port": [
+    [
+     0.99845,
+     0.055649,
+     0.000141,
+     0.000151
+    ],
+    [
+     -0.04522,
+     0.812796,
+     -0.580791,
+     -0.003401
+    ],
+    [
+     -0.032435,
+     0.579884,
+     0.814053,
+     0.314004
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "stamp_ns": 18522000000
+  },
+  {
+   "file": "f000150.png",
+   "image": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/live001/f000150.png",
+   "bbox": [
+    482,
+    434,
+    664,
+    671
+   ],
+   "port_px": [
+    577.5,
+    555.8
+   ],
+   "depth_m": 0.295,
+   "T_cam_port": [
+    [
+     0.998451,
+     0.055645,
+     0.000158,
+     0.000356
+    ],
+    [
+     -0.045203,
+     0.812743,
+     -0.580867,
+     0.010454
+    ],
+    [
+     -0.032451,
+     0.579959,
+     0.813999,
+     0.295028
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "stamp_ns": 20948000000
+  },
+  {
+   "file": "f000180.png",
+   "image": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/live001/f000180.png",
+   "bbox": [
+    475,
+    492,
+    668,
+    741
+   ],
+   "port_px": [
+    576.8,
+    620.5
+   ],
+   "depth_m": 0.2766,
+   "T_cam_port": [
+    [
+     0.998451,
+     0.055631,
+     0.000124,
+     0.000173
+    ],
+    [
+     -0.045213,
+     0.81277,
+     -0.580828,
+     0.024281
+    ],
+    [
+     -0.032413,
+     0.579923,
+     0.814026,
+     0.276629
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "stamp_ns": 23346000000
+  },
+  {
+   "file": "f000210.png",
+   "image": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/live001/f000210.png",
+   "bbox": [
+    472,
+    500,
+    667,
+    749
+   ],
+   "port_px": [
+    574.7,
+    628.3
+   ],
+   "depth_m": 0.2748,
+   "T_cam_port": [
+    [
+     0.998451,
+     0.05564,
+     0.000147,
+     -0.000281
+    ],
+    [
+     -0.045205,
+     0.812724,
+     -0.580892,
+     0.02585
+    ],
+    [
+     -0.03244,
+     0.579985,
+     0.813981,
+     0.274822
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "stamp_ns": 25698000000
+  },
+  {
+   "file": "f000240.png",
+   "image": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/live001/f000240.png",
+   "bbox": [
+    472,
+    500,
+    667,
+    749
+   ],
+   "port_px": [
+    574.8,
+    628.3
+   ],
+   "depth_m": 0.2748,
+   "T_cam_port": [
+    [
+     0.998451,
+     0.05564,
+     0.000147,
+     -0.000269
+    ],
+    [
+     -0.045205,
+     0.812724,
+     -0.580892,
+     0.02585
+    ],
+    [
+     -0.03244,
+     0.579985,
+     0.813981,
+     0.274821
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "stamp_ns": 27980000000
+  },
+  {
+   "file": "f000270.png",
+   "image": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/live001/f000270.png",
+   "bbox": [
+    472,
+    500,
+    667,
+    749
+   ],
+   "port_px": [
+    574.8,
+    628.3
+   ],
+   "depth_m": 0.2748,
+   "T_cam_port": [
+    [
+     0.998451,
+     0.05564,
+     0.000147,
+     -0.000264
+    ],
+    [
+     -0.045205,
+     0.812724,
+     -0.580892,
+     0.02584
+    ],
+    [
+     -0.03244,
+     0.579986,
+     0.81398,
+     0.274814
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "stamp_ns": 30304000000
+  },
+  {
+   "file": "f000300.png",
+   "image": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/live001/f000300.png",
+   "bbox": [
+    472,
+    500,
+    667,
+    749
+   ],
+   "port_px": [
+    574.9,
+    628.3
+   ],
+   "depth_m": 0.2748,
+   "T_cam_port": [
+    [
+     0.998451,
+     0.05564,
+     0.000147,
+     -0.000252
+    ],
+    [
+     -0.045205,
+     0.812724,
+     -0.580892,
+     0.025839
+    ],
+    [
+     -0.03244,
+     0.579986,
+     0.81398,
+     0.274813
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "stamp_ns": 32652000000
+  },
+  {
+   "file": "f000330.png",
+   "image": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/live001/f000330.png",
+   "bbox": [
+    472,
+    500,
+    667,
+    749
+   ],
+   "port_px": [
+    574.9,
+    628.3
+   ],
+   "depth_m": 0.2748,
+   "T_cam_port": [
+    [
+     0.998451,
+     0.05564,
+     0.000146,
+     -0.000241
+    ],
+    [
+     -0.045205,
+     0.812724,
+     -0.580892,
+     0.025839
+    ],
+    [
+     -0.03244,
+     0.579986,
+     0.81398,
+     0.274811
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "stamp_ns": 34908000000
+  }
+ ],
+ "K": {
+  "fx": 1236.6314774257871,
+  "fy": 1236.6314774257871,
+  "cx": 576.0,
+  "cy": 512.0,
+  "note": "camera_info from the sim, 1152x1024"
+ },
+ "mesh": "sfp_mount.obj (Intrinsic-AI/meshes/mujoco/manual_sfp_mount.obj, metres)",
+ "bbox_source": "oracle: projected 0.0357,0.051,0.0177 m box at the GT port link, pad 8 px"
+}

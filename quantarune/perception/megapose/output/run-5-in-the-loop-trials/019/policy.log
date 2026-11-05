@@ -1,0 +1,192 @@
+[2m2026-11-04T14:31:37.634500Z[0m [33m WARN[0m ThreadId(02) [2mzenoh::net::routing::interceptor::authorization[0m[2m:[0m Rule 'deny_rule' flows list is not set. Setting it to both Ingress and Egress
+[2m2026-11-04T14:31:38.136707Z[0m [33m WARN[0m ThreadId(02) [2mzenoh::net::runtime::orchestrator[0m[2m:[0m Scouting delay elapsed before start conditions are met.
+[INFO] [1793802698.203980962] [aic_model]: Loading policy module: mp_rangers.RunMegaPoseScriptedInsert
+[INFO] [1793802698.268736497] [aic_model]: Loaded policy module mp_rangers.RunMegaPoseScriptedInsert
+[INFO] [1793802698.268937193] [aic_model]: Using policy: RunMegaPoseScriptedInsert
+[INFO] [1793802701.219517724] [aic_model]: on_configure(LifecycleState(label='unconfigured', state_id=1))
+[INFO] [1793802701.219875911] [aic_model]: Instantiating policy...
+[INFO] [1793802701.222171586] [aic_model]: Policy.__init__()
+[INFO] [1793802701.234213887] [aic_model]: RunMegaPoseScriptedInsert mesh=/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/mp_rangers/sfp_mount.obj log_dir=/mnt/sienarune/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/rangers_data/outputs/fixed_scene_runs/sfp137_megapose_gtoff_20261104_019/megapose use=none trust_depth=0.33 looks<=5
+[ERROR] [1793802701.238629876] [aic_model]: aic_model lifecycle is not in the active state
+[INFO] [1793802702.237563566] [aic_model]: on_activate()
+[INFO] [1793802709.740789286] [aic_model]: Goal accepted
+[INFO] [1793802709.745900266] [aic_model]: Entering insert_cable_execute_callback()
+[INFO] [1793802709.751430081] [aic_model]: insert_cable execute loop
+[INFO] [1793802709.753144150] [aic_model]: RunMegaPoseScriptedInsert.insert_cable() task: aic_task_interfaces.msg.Task(id='task_1', cable_type='sfp_sc', cable_name='cable_0', plug_type='sfp', plug_name='sfp_tip', port_type='sfp', port_name='sfp_port_0', target_module_name='nic_card_mount_3', time_limit=180)
+[INFO] [1793802710.764877038] [aic_model]: insert_cable execute loop
+[INFO] [1793802711.768062568] [aic_model]: insert_cable execute loop
+[INFO] [1793802712.289966639] [aic_model]: LOOK1: template box=[437, 411, 579, 602] score=0.98 tpl=tpl_f000000.png scale=1.00 range=0.405 rot=0.0deg port_base=[-0.3942, 0.2081, 0.135]
+[INFO] [1793802712.291014693] [aic_model]: LOOK1: entrance_tpl=[-0.3942, 0.2081, 0.1808] tip=[-0.3723, 0.2157, 0.267] gap=0.0862 lateral=0.0233
+[INFO] [1793802712.291290280] [aic_model]: MOVE1: tip -> [-0.3942, 0.2081, 0.232] (descend 0.035)
+[INFO] [1793802712.291543438] [aic_model]: Setting cartesian mode...
+[INFO] [1793802712.292986290] [aic_model]: Successfully set target mode
+[INFO] [1793802712.768146687] [aic_model]: insert_cable execute loop
+[INFO] [1793802713.767973515] [aic_model]: insert_cable execute loop
+[INFO] [1793802714.767861767] [aic_model]: insert_cable execute loop
+[INFO] [1793802715.769407515] [aic_model]: insert_cable execute loop
+[INFO] [1793802716.769730268] [aic_model]: insert_cable execute loop
+[INFO] [1793802717.770885507] [aic_model]: insert_cable execute loop
+[INFO] [1793802718.776207599] [aic_model]: insert_cable execute loop
+[INFO] [1793802719.294263997] [aic_model]: TRACK: target=[-0.3942, 0.1874, 0.2861] reached=[-0.394, 0.1874, 0.2861] residual_mm=[-0.3, -0.0, -0.0] cmd_offset_mm=[3.4, 0.2, 9.3]
+[INFO] [1793802719.782251815] [aic_model]: insert_cable execute loop
+[INFO] [1793802720.783235958] [aic_model]: insert_cable execute loop
+[INFO] [1793802720.807592576] [aic_model]: LOOK2: template box=[494, 409, 647, 615] score=0.80 tpl=tpl_f000000.png scale=1.08 range=0.375 rot=0.0deg port_base=[-0.3954, 0.2064, 0.1294]
+[INFO] [1793802720.807913256] [aic_model]: LOOK2: entrance_tpl=[-0.3954, 0.2064, 0.1752] tip=[-0.394, 0.2081, 0.232] gap=0.0568 lateral=0.0022
+[INFO] [1793802720.808197963] [aic_model]: MOVE2: tip -> [-0.3954, 0.2064, 0.2052] (descend 0.027)
+[INFO] [1793802721.784622087] [aic_model]: insert_cable execute loop
+[INFO] [1793802722.784673595] [aic_model]: insert_cable execute loop
+[INFO] [1793802723.785261150] [aic_model]: insert_cable execute loop
+[INFO] [1793802724.785516837] [aic_model]: insert_cable execute loop
+[INFO] [1793802725.788132614] [aic_model]: insert_cable execute loop
+[INFO] [1793802726.792946279] [aic_model]: insert_cable execute loop
+[INFO] [1793802727.803659459] [aic_model]: insert_cable execute loop
+[INFO] [1793802727.825400653] [aic_model]: TRACK: target=[-0.3954, 0.1858, 0.2593] reached=[-0.3951, 0.1858, 0.2594] residual_mm=[-0.3, -0.1, -0.1] cmd_offset_mm=[4.9, -0.0, 9.9]
+[INFO] [1793802728.832364778] [aic_model]: insert_cable execute loop
+[INFO] [1793802729.373773959] [aic_model]: LOOK3: template box=[493, 423, 657, 644] score=0.65 tpl=tpl_f000000.png scale=1.16 range=0.348 rot=0.0deg port_base=[-0.3951, 0.2061, 0.1308]
+[INFO] [1793802729.374057209] [aic_model]: LOOK3: entrance_tpl=[-0.3951, 0.2061, 0.1766] tip=[-0.3952, 0.2065, 0.2053] gap=0.0287 lateral=0.0004
+[INFO] [1793802729.885031896] [aic_model]: insert_cable execute loop
+[INFO] [1793802730.850737766] [aic_model]: LOOK4: template box=[492, 422, 656, 643] score=0.65 tpl=tpl_f000000.png scale=1.16 range=0.348 rot=0.0deg port_base=[-0.3952, 0.2063, 0.1308]
+[INFO] [1793802730.866153340] [aic_model]: LOOK4: rotation search 0.0deg score=0.66
+[INFO] [1793802730.866493233] [aic_model]: LOOK4: template yaw -6.1deg -> dyaw -9.1deg
+[INFO] [1793802730.911453833] [aic_model]: insert_cable execute loop
+[INFO] [1793802731.931651163] [aic_model]: insert_cable execute loop
+[INFO] [1793802732.946244881] [aic_model]: insert_cable execute loop
+[INFO] [1793802733.950373030] [aic_model]: insert_cable execute loop
+[INFO] [1793802734.970691268] [aic_model]: insert_cable execute loop
+[INFO] [1793802735.985636174] [aic_model]: insert_cable execute loop
+[INFO] [1793802736.996760646] [aic_model]: insert_cable execute loop
+[INFO] [1793802738.039503225] [aic_model]: insert_cable execute loop
+[INFO] [1793802739.062271224] [aic_model]: insert_cable execute loop
+[INFO] [1793802740.092657056] [aic_model]: insert_cable execute loop
+[INFO] [1793802741.109370318] [aic_model]: insert_cable execute loop
+[INFO] [1793802742.129820126] [aic_model]: insert_cable execute loop
+[INFO] [1793802743.148845408] [aic_model]: insert_cable execute loop
+[INFO] [1793802744.148867479] [aic_model]: insert_cable execute loop
+[INFO] [1793802745.149275184] [aic_model]: insert_cable execute loop
+[INFO] [1793802746.149155991] [aic_model]: insert_cable execute loop
+[INFO] [1793802747.154346627] [aic_model]: insert_cable execute loop
+[INFO] [1793802748.167893737] [aic_model]: insert_cable execute loop
+[INFO] [1793802749.176081031] [aic_model]: insert_cable execute loop
+[INFO] [1793802750.201752795] [aic_model]: insert_cable execute loop
+[INFO] [1793802751.219425084] [aic_model]: insert_cable execute loop
+[INFO] [1793802752.219759611] [aic_model]: insert_cable execute loop
+[INFO] [1793802753.237445337] [aic_model]: insert_cable execute loop
+[INFO] [1793802754.252030854] [aic_model]: insert_cable execute loop
+[INFO] [1793802755.262107273] [aic_model]: insert_cable execute loop
+[INFO] [1793802756.288352040] [aic_model]: insert_cable execute loop
+[INFO] [1793802757.322746974] [aic_model]: insert_cable execute loop
+[INFO] [1793802758.042759313] [aic_model]: LOOK4: megapose space_s=27.2 cam_depth=0.294 port_base=[-0.3523, 0.1623, 0.1987] port_z_axis=[0.654, -0.562, -0.507]
+[INFO] [1793802758.043380427] [aic_model]: LOOK4: megapose checks depth_ok=True axis_ok=False near_ok=False dyaw=35.3deg
+[INFO] [1793802758.044532820] [aic_model]: ALIGN: tcp orientation set so the plug axis is vertical at port yaw -6.1deg
+[INFO] [1793802758.045729041] [aic_model]: HANDOFF: source=template dyaw=-9.1 tip -> [-0.3952, 0.2063, 0.2016] entrance=[-0.3952, 0.2063, 0.1766]
+[INFO] [1793802758.333687461] [aic_model]: insert_cable execute loop
+[INFO] [1793802759.336481615] [aic_model]: insert_cable execute loop
+[INFO] [1793802760.340766099] [aic_model]: insert_cable execute loop
+[INFO] [1793802761.349047328] [aic_model]: insert_cable execute loop
+[INFO] [1793802762.353345322] [aic_model]: insert_cable execute loop
+[INFO] [1793802763.361976792] [aic_model]: insert_cable execute loop
+[INFO] [1793802764.367233384] [aic_model]: insert_cable execute loop
+[INFO] [1793802765.098861796] [aic_model]: TRACK: target=[-0.3952, 0.1856, 0.2557] reached=[-0.3949, 0.1856, 0.2558] residual_mm=[-0.2, 0.0, -0.1] cmd_offset_mm=[5.2, -0.0, 10.1]
+[INFO] [1793802765.374782679] [aic_model]: insert_cable execute loop
+[INFO] [1793802766.384669453] [aic_model]: insert_cable execute loop
+[INFO] [1793802766.623989681] [aic_model]: SERVO0: port_px=[574.8, 537.4] desired_px=[575.7, 535.6] err_px=[-0.9, 1.7] move_xy_mm=[-0.24, -0.46]
+[INFO] [1793802767.385831059] [aic_model]: insert_cable execute loop
+[INFO] [1793802768.388412230] [aic_model]: insert_cable execute loop
+[INFO] [1793802769.388324227] [aic_model]: insert_cable execute loop
+[INFO] [1793802770.387823888] [aic_model]: insert_cable execute loop
+[INFO] [1793802771.390970991] [aic_model]: insert_cable execute loop
+[INFO] [1793802772.390575453] [aic_model]: insert_cable execute loop
+[INFO] [1793802772.629619266] [aic_model]: TRACK: target=[-0.3948, 0.2079, 0.2603] reached=[-0.3949, 0.2079, 0.2604] residual_mm=[0.1, -0.0, -0.1] cmd_offset_mm=[2.8, 1.3, 9.8]
+[INFO] [1793802772.629861532] [aic_model]: Scripted insert hand-off at xyz=[-0.3949, 0.2079, 0.2604] depth=0.08 speed=0.004 stiffness=[300.0, 300.0, 500.0, 85.0, 85.0, 85.0]
+[INFO] [1793802772.630653397] [aic_model]: SI_TICK t=0.00 req=[-0.3944, 0.2079, 0.2604] tcp=[-0.3949, 0.2079, 0.2604] force=0.59
+[INFO] [1793802773.131809548] [aic_model]: SI_TICK t=0.50 req=[-0.3952, 0.208, 0.2584] tcp=[-0.3954, 0.2078, 0.2572] force=0.53
+[INFO] [1793802773.390227400] [aic_model]: insert_cable execute loop
+[INFO] [1793802773.633566855] [aic_model]: SI_TICK t=1.00 req=[-0.3932, 0.2084, 0.2564] tcp=[-0.395, 0.2075, 0.2555] force=0.63
+[INFO] [1793802774.133673801] [aic_model]: SI_TICK t=1.50 req=[-0.3953, 0.2082, 0.2544] tcp=[-0.3943, 0.2083, 0.2534] force=0.36
+[INFO] [1793802774.391366613] [aic_model]: insert_cable execute loop
+[INFO] [1793802774.634340485] [aic_model]: SI_TICK t=2.00 req=[-0.3933, 0.2082, 0.2524] tcp=[-0.3957, 0.2077, 0.2515] force=0.76
+[INFO] [1793802775.134605225] [aic_model]: SI_TICK t=2.50 req=[-0.3948, 0.208, 0.2504] tcp=[-0.3943, 0.2082, 0.2496] force=0.61
+[INFO] [1793802775.392172450] [aic_model]: insert_cable execute loop
+[INFO] [1793802775.635582561] [aic_model]: SI_TICK t=3.00 req=[-0.3934, 0.2083, 0.2484] tcp=[-0.3953, 0.2075, 0.2475] force=0.67
+[INFO] [1793802776.137627035] [aic_model]: SI_TICK t=3.51 req=[-0.3947, 0.208, 0.2464] tcp=[-0.3947, 0.2084, 0.2456] force=0.63
+[INFO] [1793802776.401740375] [aic_model]: insert_cable execute loop
+[INFO] [1793802776.638884571] [aic_model]: SI_TICK t=4.01 req=[-0.3931, 0.2081, 0.2444] tcp=[-0.3952, 0.2076, 0.2434] force=0.77
+[INFO] [1793802777.142461678] [aic_model]: SI_TICK t=4.51 req=[-0.3948, 0.2079, 0.2424] tcp=[-0.3945, 0.2083, 0.2415] force=1.0
+[INFO] [1793802777.400878343] [aic_model]: insert_cable execute loop
+[INFO] [1793802777.642699107] [aic_model]: SI_TICK t=5.01 req=[-0.3931, 0.2082, 0.2404] tcp=[-0.3953, 0.2075, 0.2394] force=0.5
+[INFO] [1793802778.144107244] [aic_model]: SI_TICK t=5.51 req=[-0.3947, 0.208, 0.2384] tcp=[-0.3945, 0.2083, 0.2374] force=0.79
+[INFO] [1793802778.403282235] [aic_model]: insert_cable execute loop
+[INFO] [1793802778.644934851] [aic_model]: SI_TICK t=6.01 req=[-0.3934, 0.2079, 0.2364] tcp=[-0.3951, 0.2077, 0.2372] force=3.97
+[INFO] [1793802779.144994269] [aic_model]: SI_TICK t=6.51 req=[-0.3951, 0.2078, 0.2344] tcp=[-0.3945, 0.208, 0.2331] force=4.03
+[INFO] [1793802779.437520906] [aic_model]: insert_cable execute loop
+[INFO] [1793802779.646247667] [aic_model]: SI_TICK t=7.02 req=[-0.3945, 0.2083, 0.2324] tcp=[-0.3946, 0.2073, 0.2316] force=1.5
+[INFO] [1793802780.147591817] [aic_model]: SI_TICK t=7.52 req=[-0.3957, 0.2084, 0.2304] tcp=[-0.3945, 0.2082, 0.2295] force=3.82
+[INFO] [1793802780.502104421] [aic_model]: insert_cable execute loop
+[INFO] [1793802780.651711314] [aic_model]: SI_TICK t=8.02 req=[-0.3951, 0.2085, 0.2283] tcp=[-0.3946, 0.2078, 0.2275] force=2.16
+[INFO] [1793802781.155775255] [aic_model]: SI_TICK t=8.52 req=[-0.3962, 0.2084, 0.2263] tcp=[-0.3946, 0.2081, 0.2257] force=4.29
+[INFO] [1793802781.623017596] [aic_model]: insert_cable execute loop
+[INFO] [1793802781.656866344] [aic_model]: SI_TICK t=9.03 req=[-0.3952, 0.2086, 0.2243] tcp=[-0.3946, 0.2077, 0.2236] force=3.35
+[INFO] [1793802782.159453751] [aic_model]: SI_TICK t=9.53 req=[-0.3963, 0.2084, 0.2223] tcp=[-0.3946, 0.2081, 0.2218] force=4.21
+[INFO] [1793802782.662538089] [aic_model]: SI_TICK t=10.03 req=[-0.3954, 0.2086, 0.2203] tcp=[-0.3946, 0.2077, 0.2197] force=2.92
+[INFO] [1793802782.787043236] [aic_model]: insert_cable execute loop
+[INFO] [1793802783.169355182] [aic_model]: SI_TICK t=10.54 req=[-0.3964, 0.2084, 0.2183] tcp=[-0.3946, 0.208, 0.2176] force=4.11
+[INFO] [1793802783.670095972] [aic_model]: SI_TICK t=11.04 req=[-0.3954, 0.2087, 0.2163] tcp=[-0.3946, 0.2078, 0.2155] force=3.07
+[INFO] [1793802783.842948118] [aic_model]: insert_cable execute loop
+[INFO] [1793802784.175148136] [aic_model]: SI_TICK t=11.54 req=[-0.3964, 0.2084, 0.2142] tcp=[-0.3946, 0.208, 0.2136] force=4.06
+[INFO] [1793802784.676488259] [aic_model]: SI_TICK t=12.05 req=[-0.3955, 0.2087, 0.2122] tcp=[-0.3946, 0.2078, 0.2114] force=3.29
+[INFO] [1793802784.892330204] [aic_model]: insert_cable execute loop
+[INFO] [1793802785.136379467] [aic_model]: SI_TICK t=12.50 req=[-0.3965, 0.2086, 0.2104] tcp=[-0.3946, 0.2079, 0.2098] force=4.53
+[INFO] [1793802785.636527806] [aic_model]: SI_TICK t=13.01 req=[-0.3955, 0.2086, 0.2084] tcp=[-0.3946, 0.2078, 0.2077] force=3.29
+[INFO] [1793802785.937879679] [aic_model]: insert_cable execute loop
+[INFO] [1793802786.137336666] [aic_model]: SI_TICK t=13.51 req=[-0.3965, 0.2086, 0.2064] tcp=[-0.3946, 0.2079, 0.2056] force=4.9
+[INFO] [1793802786.639289689] [aic_model]: SI_TICK t=14.01 req=[-0.3955, 0.2086, 0.2044] tcp=[-0.3946, 0.2078, 0.2036] force=3.66
+[INFO] [1793802787.013729408] [aic_model]: insert_cable execute loop
+[INFO] [1793802787.143215455] [aic_model]: SI_TICK t=14.51 req=[-0.3965, 0.2085, 0.2024] tcp=[-0.3946, 0.2078, 0.2015] force=4.78
+[INFO] [1793802787.644307501] [aic_model]: SI_TICK t=15.01 req=[-0.3955, 0.2086, 0.2004] tcp=[-0.3946, 0.2077, 0.1997] force=3.26
+[INFO] [1793802788.053260856] [aic_model]: insert_cable execute loop
+[INFO] [1793802788.145861220] [aic_model]: SI_TICK t=15.52 req=[-0.3965, 0.2085, 0.1984] tcp=[-0.3946, 0.2078, 0.1976] force=4.51
+[INFO] [1793802788.654557719] [aic_model]: SI_TICK t=16.02 req=[-0.3955, 0.2086, 0.1963] tcp=[-0.3946, 0.2077, 0.1957] force=3.81
+[INFO] [1793802789.096171570] [aic_model]: insert_cable execute loop
+[INFO] [1793802789.150763847] [aic_model]: SI_TICK t=16.52 req=[-0.3965, 0.2085, 0.1943] tcp=[-0.3946, 0.2077, 0.1936] force=4.54
+[INFO] [1793802789.651372581] [aic_model]: SI_TICK t=17.02 req=[-0.3955, 0.2086, 0.1923] tcp=[-0.3946, 0.2077, 0.1914] force=4.14
+[INFO] [1793802790.142900664] [aic_model]: insert_cable execute loop
+[INFO] [1793802790.158034093] [aic_model]: SI_TICK t=17.53 req=[-0.3965, 0.2085, 0.1903] tcp=[-0.3946, 0.2077, 0.1905] force=5.19
+[INFO] [1793802790.658143650] [aic_model]: SI_TICK t=18.03 req=[-0.3955, 0.2087, 0.1883] tcp=[-0.3946, 0.2077, 0.1905] force=6.96
+[INFO] [1793802790.907683722] [aic_model]: Scripted insert done. reason=insertion_event descended=69.96mm retries=0 xy_bias_mm=[-1.08, 0.66] event=True
+[INFO] [1793802790.907901093] [aic_model]: FINISH success=True megapose_guided reason=handoff_template event='/nic_card_mount_3/sfp_port_0'
+[INFO] [1793802791.159786006] [aic_model]: insert_cable execute loop
+[INFO] [1793802792.258947190] [aic_model]: insert_cable execute loop
+[INFO] [1793802793.337712332] [aic_model]: insert_cable execute loop
+[INFO] [1793802794.406553768] [aic_model]: insert_cable execute loop
+[INFO] [1793802795.512256096] [aic_model]: insert_cable execute loop
+[INFO] [1793802796.593180602] [aic_model]: insert_cable execute loop
+[INFO] [1793802797.660423167] [aic_model]: insert_cable execute loop
+[INFO] [1793802798.860140221] [aic_model]: insert_cable execute loop
+[INFO] [1793802800.124243748] [aic_model]: insert_cable execute loop
+[INFO] [1793802801.349963825] [aic_model]: insert_cable execute loop
+[INFO] [1793802802.593755068] [aic_model]: insert_cable() returned True
+[INFO] [1793802803.573321322] [aic_model]: on_deactivate(LifecycleState(label='active', state_id=3))
+[INFO] [1793802804.014111583] [aic_model]: on_cleanup(LifecycleState(label='inactive', state_id=2))
+[INFO] [1793802804.014783433] [aic_model]: on_shutdown(LifecycleState(label='unconfigured', state_id=1))
+[ros2run]: Received signal:  Terminated
+Exception in thread Thread-1 (run_func):
+Traceback (most recent call last):
+  File "/mnt/sienarune/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/.pixi/envs/default/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/mnt/sienarune/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/.pixi/envs/default/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/mnt/sienarune/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/.pixi/envs/default/lib/python3.12/site-packages/tf2_ros/transform_listener.py", line 115, in run_func
+    self.executor.spin()
+  File "/mnt/sienarune/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/.pixi/envs/default/lib/python3.12/site-packages/rclpy/executors.py", line 374, in spin
+    self.spin_once()
+  File "/mnt/sienarune/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/.pixi/envs/default/lib/python3.12/site-packages/rclpy/executors.py", line 968, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "/mnt/sienarune/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/.pixi/envs/default/lib/python3.12/site-packages/rclpy/executors.py", line 951, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/sienarune/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/.pixi/envs/default/lib/python3.12/site-packages/rclpy/executors.py", line 921, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/sienarune/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/.pixi/envs/default/lib/python3.12/site-packages/rclpy/executors.py", line 827, in _wait_for_ready_callbacks
+    raise ExternalShutdownException()
+rclpy.executors.ExternalShutdownException

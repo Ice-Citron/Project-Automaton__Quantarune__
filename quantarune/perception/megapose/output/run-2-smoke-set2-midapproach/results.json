@@ -1,0 +1,454 @@
+{
+ "space": "hedonismbot24/megapose-6d-pose-estimation",
+ "mode": "RGB",
+ "K": {
+  "fx": 309.1578693564468,
+  "fy": 309.1578693564468,
+  "cx": 144.0,
+  "cy": 128.0,
+  "note": "Gazebo camera 1152x1024 hfov 0.8718 rad scaled by 1/4 to the 288x256 pack frames; square pixels assumed"
+ },
+ "mesh": "sfp_mount.obj (Intrinsic-AI/meshes/mujoco/manual_sfp_mount.obj, metres)",
+ "results": [
+  {
+   "episode_id": "ep_000000",
+   "frame_idx": 0,
+   "image": "/home/starforge-sf95/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/rangers_training/outputs/segmentation_annotation_pack_sfp_20260506/images/ep_000000/frame_000000.png",
+   "bbox": [
+    32,
+    0,
+    107,
+    51
+   ],
+   "mask_px": 1095,
+   "target_slot": "nic_card_mount_0",
+   "port_name": "sfp_port_0",
+   "task_text": "insert sfp_sc cable cable_0 with sfp plug sfp_tip into sfp port sfp_port_0 on module nic_card_mount_0",
+   "ok": true,
+   "seconds": 15.6,
+   "pose_T_cam_obj": [
+    [
+     -0.386,
+     -0.7393,
+     -0.5518,
+     -0.0573
+    ],
+    [
+     0.8811,
+     -0.1182,
+     -0.458,
+     -0.0618
+    ],
+    [
+     0.2734,
+     -0.6629,
+     0.697,
+     0.1929
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "vis": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/set2/ep_000000_f000000_vis.png"
+  },
+  {
+   "episode_id": "ep_000049",
+   "frame_idx": 160,
+   "image": "/home/starforge-sf95/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/rangers_training/outputs/segmentation_annotation_pack_sfp_20260506/images/ep_000049/frame_000160.png",
+   "bbox": [
+    0,
+    67,
+    162,
+    127
+   ],
+   "mask_px": 2151,
+   "target_slot": "nic_card_mount_2",
+   "port_name": "sfp_port_0",
+   "task_text": "insert sfp_sc cable cable_0 with sfp plug sfp_tip into sfp port sfp_port_0 on module nic_card_mount_2",
+   "ok": true,
+   "seconds": 14.5,
+   "pose_T_cam_obj": [
+    [
+     -0.0356,
+     -0.9878,
+     0.1515,
+     -0.0231
+    ],
+    [
+     0.02,
+     -0.1522,
+     -0.9881,
+     -0.0095
+    ],
+    [
+     0.9992,
+     -0.0321,
+     0.0251,
+     0.1203
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "vis": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/set2/ep_000049_f000160_vis.png"
+  },
+  {
+   "episode_id": "ep_000098",
+   "frame_idx": 120,
+   "image": "/home/starforge-sf95/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/rangers_training/outputs/segmentation_annotation_pack_sfp_20260506/images/ep_000098/frame_000120.png",
+   "bbox": [
+    32,
+    55,
+    181,
+    103
+   ],
+   "mask_px": 2168,
+   "target_slot": "nic_card_mount_0",
+   "port_name": "sfp_port_0",
+   "task_text": "insert sfp_sc cable cable_0 with sfp plug sfp_tip into sfp port sfp_port_0 on module nic_card_mount_0",
+   "ok": true,
+   "seconds": 15.8,
+   "pose_T_cam_obj": [
+    [
+     -0.6535,
+     -0.7391,
+     0.1636,
+     -0.0048
+    ],
+    [
+     -0.1436,
+     -0.0912,
+     -0.9854,
+     -0.0212
+    ],
+    [
+     0.7432,
+     -0.6674,
+     -0.0465,
+     0.1505
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "vis": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/set2/ep_000098_f000120_vis.png"
+  },
+  {
+   "episode_id": "ep_000147",
+   "frame_idx": 40,
+   "image": "/home/starforge-sf95/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/rangers_training/outputs/segmentation_annotation_pack_sfp_20260506/images/ep_000147/frame_000040.png",
+   "bbox": [
+    53,
+    136,
+    139,
+    173
+   ],
+   "mask_px": 981,
+   "target_slot": "nic_card_mount_1",
+   "port_name": "sfp_port_0",
+   "task_text": "insert sfp_sc cable cable_0 with sfp plug sfp_tip into sfp port sfp_port_0 on module nic_card_mount_1",
+   "ok": true,
+   "seconds": 16.1,
+   "pose_T_cam_obj": [
+    [
+     0.9758,
+     -0.0222,
+     -0.2174,
+     -0.0288
+    ],
+    [
+     0.2179,
+     0.1738,
+     0.9604,
+     0.0168
+    ],
+    [
+     0.0164,
+     -0.9845,
+     0.1744,
+     0.1823
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "vis": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/set2/ep_000147_f000040_vis.png"
+  },
+  {
+   "episode_id": "ep_000196",
+   "frame_idx": 40,
+   "image": "/home/starforge-sf95/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/rangers_training/outputs/segmentation_annotation_pack_sfp_20260506/images/ep_000196/frame_000040.png",
+   "bbox": [
+    9,
+    86,
+    126,
+    150
+   ],
+   "mask_px": 1924,
+   "target_slot": "nic_card_mount_1",
+   "port_name": "sfp_port_0",
+   "task_text": "insert sfp_sc cable cable_0 with sfp plug sfp_tip into sfp port sfp_port_0 on module nic_card_mount_1",
+   "ok": true,
+   "seconds": 15.9,
+   "pose_T_cam_obj": [
+    [
+     0.3336,
+     -0.9149,
+     0.2274,
+     -0.041
+    ],
+    [
+     0.9167,
+     0.2585,
+     -0.3046,
+     -0.0029
+    ],
+    [
+     0.2199,
+     0.31,
+     0.9249,
+     0.1607
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "vis": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/set2/ep_000196_f000040_vis.png"
+  },
+  {
+   "episode_id": "ep_000245",
+   "frame_idx": 120,
+   "image": "/home/starforge-sf95/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/rangers_training/outputs/segmentation_annotation_pack_sfp_20260506/images/ep_000245/frame_000120.png",
+   "bbox": [
+    31,
+    0,
+    108,
+    108
+   ],
+   "mask_px": 2159,
+   "target_slot": "nic_card_mount_3",
+   "port_name": "sfp_port_0",
+   "task_text": "insert sfp_sc cable cable_0 with sfp plug sfp_tip into sfp port sfp_port_0 on module nic_card_mount_3",
+   "ok": true,
+   "seconds": 15.3,
+   "pose_T_cam_obj": [
+    [
+     -0.0659,
+     -0.6138,
+     0.7867,
+     -0.0323
+    ],
+    [
+     -0.9874,
+     -0.0737,
+     -0.1402,
+     -0.0513
+    ],
+    [
+     0.1441,
+     -0.786,
+     -0.6012,
+     0.1268
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "vis": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/set2/ep_000245_f000120_vis.png"
+  },
+  {
+   "episode_id": "ep_000294",
+   "frame_idx": 100,
+   "image": "/home/starforge-sf95/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/rangers_training/outputs/segmentation_annotation_pack_sfp_20260506/images/ep_000294/frame_000100.png",
+   "bbox": [
+    0,
+    50,
+    141,
+    93
+   ],
+   "mask_px": 2129,
+   "target_slot": "nic_card_mount_0",
+   "port_name": "sfp_port_0",
+   "task_text": "insert sfp_sc cable cable_0 with sfp plug sfp_tip into sfp port sfp_port_0 on module nic_card_mount_0",
+   "ok": true,
+   "seconds": 16.1,
+   "pose_T_cam_obj": [
+    [
+     -0.2339,
+     -0.972,
+     0.0208,
+     -0.0305
+    ],
+    [
+     0.3128,
+     -0.0955,
+     -0.945,
+     -0.0277
+    ],
+    [
+     0.9206,
+     -0.2145,
+     0.3264,
+     0.1487
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "vis": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/set2/ep_000294_f000100_vis.png"
+  },
+  {
+   "episode_id": "ep_000343",
+   "frame_idx": 220,
+   "image": "/home/starforge-sf95/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/rangers_training/outputs/segmentation_annotation_pack_sfp_20260506/images/ep_000343/frame_000220.png",
+   "bbox": [
+    0,
+    2,
+    150,
+    57
+   ],
+   "mask_px": 2050,
+   "target_slot": "nic_card_mount_0",
+   "port_name": "sfp_port_0",
+   "task_text": "insert sfp_sc cable cable_0 with sfp plug sfp_tip into sfp port sfp_port_0 on module nic_card_mount_0",
+   "ok": true,
+   "seconds": 16.0,
+   "pose_T_cam_obj": [
+    [
+     -0.2628,
+     -0.964,
+     0.0415,
+     -0.0262
+    ],
+    [
+     0.2052,
+     -0.0979,
+     -0.9738,
+     -0.042
+    ],
+    [
+     0.9428,
+     -0.2474,
+     0.2235,
+     0.1237
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "vis": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/set2/ep_000343_f000220_vis.png"
+  },
+  {
+   "episode_id": "ep_000392",
+   "frame_idx": 160,
+   "image": "/home/starforge-sf95/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/rangers_training/outputs/segmentation_annotation_pack_sfp_20260506/images/ep_000392/frame_000160.png",
+   "bbox": [
+    40,
+    0,
+    115,
+    79
+   ],
+   "mask_px": 1398,
+   "target_slot": "nic_card_mount_1",
+   "port_name": "sfp_port_0",
+   "task_text": "insert sfp_sc cable cable_0 with sfp plug sfp_tip into sfp port sfp_port_0 on module nic_card_mount_1",
+   "ok": true,
+   "seconds": 14.7,
+   "pose_T_cam_obj": [
+    [
+     -0.3699,
+     -0.1671,
+     0.9139,
+     -0.0352
+    ],
+    [
+     -0.9085,
+     -0.1407,
+     -0.3935,
+     -0.0379
+    ],
+    [
+     0.1944,
+     -0.9758,
+     -0.0998,
+     0.161
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "vis": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/set2/ep_000392_f000160_vis.png"
+  },
+  {
+   "episode_id": "ep_000441",
+   "frame_idx": 0,
+   "image": "/home/starforge-sf95/Black-Projects/Project-Automaton/Santa_Maria/code/aic-rangers-isaac-training/rangers_training/outputs/segmentation_annotation_pack_sfp_20260506/images/ep_000441/frame_000000.png",
+   "bbox": [
+    32,
+    55,
+    145,
+    105
+   ],
+   "mask_px": 1590,
+   "target_slot": "nic_card_mount_0",
+   "port_name": "sfp_port_0",
+   "task_text": "insert sfp_sc cable cable_0 with sfp plug sfp_tip into sfp port sfp_port_0 on module nic_card_mount_0",
+   "ok": true,
+   "seconds": 19.4,
+   "pose_T_cam_obj": [
+    [
+     -0.3472,
+     -0.9081,
+     0.2342,
+     -0.0363
+    ],
+    [
+     0.2642,
+     -0.3343,
+     -0.9046,
+     -0.0166
+    ],
+    [
+     0.8998,
+     -0.2522,
+     0.356,
+     0.1436
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "vis": "/tmp/claude-1000/-mnt-sienarune-Black-Projects-Project-Automaton-Santa-Maria/e85be851-ca71-4636-bbd1-9a977f519d70/scratchpad/megapose_space/set2/ep_000441_f000000_vis.png"
+  }
+ ]
+}

@@ -1,66 +1,80 @@
-# computer-vision
+# perception
 
-This folder holds the perception work (there are three components to this).
+This folder holds our work on finding the plug and the target port in
+the camera images. We tried four methods. Most of this work did not go
+into our final policy. We keep it here as a record. This folder is an
+archive, so the code does not run as is.
 
-Note that while a lot of this was not successfully incorporated in our final design, we have decided to include it in this repo for the sake of completeness. 
+## Layout
 
 ```
-classical/: holds the OpenCV port finder and the vision gate. 
-segmentation-model/: holds the learned port segmenter with its code and best checkpoint and a 200-episode sample of the annotation pack. 
-cnos/: holds SAM and DINOv2 
-megapose/: a simple readme discussing ideas.
+perception/
+  classical/            OpenCV features of the plug and the port
+  segmentation-model/   a learned segmenter for the plug and the port
+  cnos/                 SAM mask proposals with DINOv2 selection
+  megapose/             6D pose of the port with MegaPose
 ```
 
-## Research and exploration
+## classical/
 
-### Learned port and plug segmentation
+| File | What it does |
+|---|---|
+| `vision_target_features.py` | Finds plug and port keypoints in the centre camera and estimates their geometry |
+| `learned_segmentation_cv.py` | Gets the same features from the masks of the learned segmenter |
 
-<a href="https://github.com/Ice-Citron/Project-Automaton__Quantarune__/blob/main/quantarune/computer-vision/segmentation-model/"><img src="https://raw.githubusercontent.com/Ice-Citron/Project-Automaton__Quantarune__/main/quantarune/computer-vision/cnos/segmenter_val_overlays.png" width="100%"></a>
+The policies in `../policies/vision-gated/` use these features.
 
-A U-Net trained on the demonstration frames to segment the plug and the
-target port, with the pseudo-labels drawn in red and the prediction outlined
-in green. After 14 epochs the validation mean IoU is 0.41, the plug IoU 0.43
-and the target IoU 0.38, with a plug centre error of 18 px and a target
-centre error of 49 px (`segmentation-model/model/metrics.jsonl`). Good
-enough to find the plug, not yet good enough to centre a port.
+## segmentation-model/
 
-<img src="https://raw.githubusercontent.com/Ice-Citron/Project-Automaton__Quantarune__/main/quantarune/computer-vision/cnos/segmenter_training_curves.png" width="60%">
+This is a U-Net that segments the plug and the target port.
+`train_port_segmentation.py` trains it.
 
-### SAM proposals against the pseudo-labels
+| Path | What it holds |
+|---|---|
+| `model/` | The model, the datasets, the losses, the metrics and the inference code |
+| `config/config.json` | The model config |
+| `utils/dataset/` | Export of the annotation pack, the pseudo-labels and the train and validation manifests |
+| `utils/manual-correction/` | Selection of a review subset, a browser tool to correct masks, validation and fine-tune manifests |
 
-<a href="https://github.com/Ice-Citron/Project-Automaton__Quantarune__/blob/main/quantarune/computer-vision/cnos/"><img src="https://raw.githubusercontent.com/Ice-Citron/Project-Automaton__Quantarune__/main/quantarune/computer-vision/cnos/sam_proposals_vs_pseudolabel.png" width="60%"></a>
+The recorded result after 14 epochs was a mean IoU of 0.41 on the
+validation set. The plug IoU was 0.43 and the target IoU was 0.38. The
+model found the plug. It was not accurate enough to centre on a port.
 
-Segment Anything (ViT-B) on three frames gives 39 to 54 mask proposals per
-frame, and the best proposal overlaps the pseudo-label with an IoU of 0.54,
-0.92 and 0.93 (`cnos/sam_demo_summary.json`). The right mask is usually
-among the proposals, so the open question was how to pick it.
+## cnos/
 
-### CNOS-style selection with DINOv2
+| File | What it does |
+|---|---|
+| `sam_demo.py` | Makes automatic mask proposals with SAM (ViT-B) |
+| `cnos_style_selection.py` | Selects one proposal by DINOv2 similarity to templates |
+| `segmenter_overlays.py` | Draws the segmenter output on held-out frames |
+| `output/` | The result images and the two summary JSON files |
 
-<a href="https://github.com/Ice-Citron/Project-Automaton__Quantarune__/blob/main/quantarune/computer-vision/cnos/"><img src="https://raw.githubusercontent.com/Ice-Citron/Project-Automaton__Quantarune__/main/quantarune/computer-vision/cnos/cnos_style_dinov2_selection.png" width="100%"></a>
+SAM usually made a good mask. The best proposal had an IoU of 0.54 to
+0.93 against the pseudo-label. The DINOv2 selection did not pick it
+often. On 12 frames the top pick had a mean IoU of 0.19.
 
-Picking the proposal by DINOv2 similarity to 24 templates, in the style of
-CNOS. On 12 test frames the top-1 pick overlaps the label by 0.19 IoU on
-average and clears 0.5 IoU in only 2 frames, while the best available
-proposal averages 0.50 (`cnos/cnos_style_summary.json`). 
+## megapose/
 
-### MegaPose
+MegaPose estimates the 6D pose of an object from one RGB image and a
+mesh. The weights were not available, so every call went through a
+public Hugging Face Space on CPU.
 
-<a href="https://github.com/Ice-Citron/Project-Automaton__Quantarune__/blob/main/quantarune/computer-vision/megapose/OFFLINE_EVALUATION_20261104.md"><img src="https://raw.githubusercontent.com/Ice-Citron/Project-Automaton__Quantarune__/main/quantarune/computer-vision/megapose/figures/offline_smoke_overlay_sheet.png" width="100%"></a>
+| Path | What it holds |
+|---|---|
+| `scripts/` | The shell runners for the capture, the trials and the evidence chain |
+| `utils/data-preparation/` | Frame matching to the bag, ground-truth extraction and the input lists |
+| `utils/huggingface-client/` | The client for the Space and a copy of the Space app |
+| `utils/evaluation/` | Comparison with ground truth and the trial summary |
+| `output/run-1` to `run-5` | Results of the two smoke tests, the two offline runs and the in-the-loop trials |
 
-MegaPose was run as an experiment. Every call went through a public Hugging Face
-Space running the RGB model on CPU. Offline, against the ground-truth port
-pose on SFP scene 137, the estimates land 8 to 12 mm off in the image plane
-but tens of millimetres off in depth, which is not enough to drive the last
-millimetre (`megapose/OFFLINE_EVALUATION_20261104.md`).
+Offline on SFP scene 137, MegaPose found the port to about 1 cm in the
+image plane. The depth error was tens of millimetres. In the loop, the
+policy logged the MegaPose estimate but did not use it to move the arm.
+See `../policies/megapose-scripted-insert/` for that policy.
 
-<a href="https://github.com/Ice-Citron/Project-Automaton__Quantarune__/blob/main/quantarune/computer-vision/megapose/IN_THE_LOOP_20261104.md"><img src="https://raw.githubusercontent.com/Ice-Citron/Project-Automaton__Quantarune__/main/quantarune/computer-vision/megapose/figures/in_loop_trial001_looks_sheet.png" width="100%"></a>
+## Notes
 
-MegaPose was then called inside a running policy with ground truth off on
-the same scene, 21 trials in all. The three evidence trials inserted the
-cable and scored 87.21, 87.20 and 87.15, but the insertion was driven by
-taught cage templates, an image servo at the hand-off and the scripted
-insert. MegaPose's estimates at the hand-off were about 1 cm off in the
-plane and 4 cm high, so they were logged, gated and never allowed to move
-the arm. Everything was taught and tested on scene 137 only
-(`megapose/IN_THE_LOOP_20261104.md`).
+- Some scripts still import `quantarune_training.vision`. That code is
+  now in `segmentation-model/model/`.
+- The datasets, the checkpoints and the raw frames are not in this
+  repository.

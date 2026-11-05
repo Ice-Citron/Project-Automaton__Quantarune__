@@ -1,0 +1,18 @@
+{
+ "width": 1152,
+ "height": 1024,
+ "k": [
+  1236.6314774257871,
+  0,
+  576,
+  0,
+  1236.6314774257871,
+  512,
+  0,
+  0,
+  1
+ ],
+ "d": [],
+ "frame_id": "center_camera/optical",
+ "note": "ideal pinhole from basler_camera_macro.xacro: 1152x1024, horizontal_fov 0.8718 rad; cx,cy at image centre"
+}
